@@ -2,7 +2,7 @@
 // document.createElement creates an element that can be altered and then inserted into the DOM
 // document.body.appendChild places a node as a child under the body element
 var title = document.createElement('div');
-title.innerHTML = 'Social Calendar';
+title.innerHTML = 'Pretty Calendar';
 document.body.appendChild(title);
 
 var table = document.createElement('table');
@@ -64,7 +64,7 @@ function makeCell(row, col, i){
 	goals.className = "goals";
 	var challenge = document.createElement('h3');
 	challenge.className = "challenge";
-	unit.appendChild(document.createTextNode(schedule[i]["unit"]));
+	unit.appendChild(document.createTextNode("Unit " + schedule[i]["unit"]));
 	//day.appendChild(document.createTextNode(schedule[i]["day"]));
 	for (index in schedule[i]["goals"]){
 		var li = document.createElement('li');
