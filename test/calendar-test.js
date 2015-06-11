@@ -1,4 +1,4 @@
-describe('Calendar Spec', function() {
+xdescribe('Calendar Spec', function() {
   var length = schedule.length;
   var number_of_goals = schedule.reduce(function(prev, curr) {
      return prev + curr.goals.length;
