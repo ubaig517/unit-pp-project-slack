@@ -4,6 +4,9 @@ console.log("\n**********READ ME**********\n\nPreviously when you wrote code, yo
 "\n\n***HINT*** \n\nUse the appendChild method\n\n")
 
 describe('Your Calendar', function() {
+=======
+xdescribe('Calendar Spec', function() {
+>>>>>>> (feat) add more test
   var length = schedule.length;
   var number_of_goals = schedule.reduce(function(prev, curr) {
      return prev + curr.goals.length;
