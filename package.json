@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start" : "node server/server.js",
     "test": "node_modules/.bin/mocha-phantomjs --ignore-ssl-errors=true index.html"
   },
   "preinstall": "brew update && brew install phantomjs",
