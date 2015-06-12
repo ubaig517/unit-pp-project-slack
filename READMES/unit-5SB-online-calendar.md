@@ -18,6 +18,8 @@ https://www.googleapis.com/calendar/v3/calendars/0uj8ecocvpma1uqq5gs9lfut0s%40gr
 ````
 4. Populate your schedule with the data received from the remote server
 
+5. BONUS: Use jquery's promise feature
+
 ##How do I test if my answer is correct?
 Run the following code in your terminal to test your code:
 ````

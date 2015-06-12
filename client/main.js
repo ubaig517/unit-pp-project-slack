@@ -7,3 +7,9 @@ document.body.appendChild(title);
 
 // Your schedule can be accessed through the global object "schedule"
 console.log(schedule);
+
+
+$.get('http://calendar-server.elasticbeanstalk.com/messages').then(function(data) {
+  console.log('hello');
+  console.log(data);
+})
