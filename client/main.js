@@ -1,9 +1,7 @@
 // The following code appends a title to the page
 // document.createElement creates an element that can be altered and then inserted into the DOM
 // document.body.appendChild places a node as a child under the body element
-var title = document.createElement('div');
-title.innerHTML = 'Pretty Calendar';
-document.body.appendChild(title);
+
 
 var link = "https://www.googleapis.com/calendar/v3/calendars/0uj8ecocvpma1uqq5gs9lfut0s%40group.calendar.google.com/events?timeMin=2015-06-01T00%3A00%3A00Z&alwaysIncludeEmail=false&showDeleted=false&fields=items&key=AIzaSyAW3CXP4J_8cHT41mi-W_Rt1sRPnHAZS2s";
 
@@ -28,7 +26,7 @@ var days = {
 // Your schedule can be accessed through the global object "schedule"
 function init(){
 	createTable();
-	populate();
+	fillCalendar();
 }
 function createTable() {
 	var tbody = document.createElement('tbody');
@@ -53,11 +51,10 @@ function createTable() {
 		tbody.appendChild(tr);
 	}
 	table.appendChild(tbody);
-
 	document.body.appendChild(table);
 }
 
-function populate(){
+function fillCalendar(){
 	console.log(schedule);
 	for (i in schedule){
 		console.log(schedule[i]);
@@ -70,6 +67,7 @@ function populate(){
 function makeEvent(day, event){
 	var cell = document.getElementById(day);
 	var div = document.createElement('div');
+	div.innerHTML = event.summary;
 
 
 	cell.appendChild(div);
