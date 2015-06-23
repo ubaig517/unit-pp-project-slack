@@ -13,7 +13,7 @@ In this challenge, we will be creating a messaging app. We will then add that ro
 
 2. To retrieve and input messages from the server, make GET and POST requests to the following endpoint:
 ````
-https://popping-fire-8919.firebaseio.com/Chatroom
+http://calendar-server.elasticbeanstalk.com/messages
 ````
 
 3. Integrate the chatroom with your calendar app.
