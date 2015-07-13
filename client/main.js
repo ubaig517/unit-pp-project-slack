@@ -7,3 +7,10 @@ title.innerHTML = 'Social Calendar';
 document.body.appendChild(title);
 
 console.log(schedule);
+
+$.get('http://calendar-server.elasticbeanstalk.com/messages').then(function(data) {
+  console.log('hello');
+  console.log(data);
+});
+
+
