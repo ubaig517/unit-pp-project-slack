@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha-phantomjs --ignore-ssl-errors=true index.html"
+    "test": "node_modules/.bin/phantomjs --ignore-ssl-errors=true --web-security=no --ssl-protocol=any node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee index.html"
   },
   "preinstall": "brew update && brew install phantomjs",
   "author": "",
