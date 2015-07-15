@@ -32,24 +32,23 @@ User-Agent: Information about the method at which the browser is communicating w
   -fetching extra calendar events from Google's server
   -adding a chatroom feature to your calendar
 
-Both challenges require you to make an AJAX request - but to different servers. 
+ - Both challenges require you to make an AJAX request - but to different servers. 
 
-There are many ways to make an AJAX requests to a server. It can be done with javascript without having to load any external files. External files - such as jQuery - make it easier to use AJAX requests.
+ - There are many ways to make an AJAX requests to a server. It can be done with javascript without having to load any external files. External files - such as jQuery - make it easier to make AJAX requests.
 
-![inline](http://www.devbattles.com/en/images/upload/1427973218.png)
+1. We will be working on this challenge on a separate branch from the ```master``` branch
 
-1. We will be working on this challenge on a separate branch
+1. To create a new branch, type the following command in the command line:
+````
+git checkout -b unit-5-online-chatroom 
+````
 
-1. Add the Codesmith Github Organization as a remote to your local repository with the follwoing command: 
+1. To update our new branch with files from the Codesmith Github Organization, we first need to link our local repository to the Codesmith Github Organization. To add a remote - which we will name ```upstream``` - to our local repository, runing the following command in your terminal.
 ````
 git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
 ````
-1. Create a new branch with the following line:
-````
-git checkout -b unit-5-online-slack 
-````
 
-1. Update the branch with the new requirements with the following line:
+1. To update the branch with our new files, run the following line in terminal:
 ````
 git pull upstream unit-5-online-slack
 ````
