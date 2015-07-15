@@ -54,27 +54,24 @@ git pull upstream unit-5-online-slack
 ````
 
 ###Online-Calendar
-1. In the previous Skills Builder (4SB), we used data that was present in our folder (also known as 'local') to create our calendar. We will be connecting to Google's server to get data from the Google Calendar we have all been using. To connect to a remote server, we will be making an AJAX GET request to the following location (also know as a uniform resource identifier).
+1. To connect to a remote server, make an AJAX GET request to the following location:
 ````
 https://www.googleapis.com/calendar/v3/calendars/pe13s26rvf4fud47l08ti750i0@group.calendar.google.com/events?key=AIzaSyAyucc-d1nuZQnRsbMeZ1RtP04ZIdKr0qU
 ````
 
-1. Update your calendar to handle the additional data.  
+1. Update your calendar from the previous challenge to include data from the AJAX request.  
 
 ###Online-Chatroom
-1. Create a chatroom element using html and javascript (feel free to use jQuery).
-  - Create an area where incoming messages are displayed
-  - Create an input and button where your messages can be sent
+1. Create an area where chat messages can be displayed. 
 
 1. Retrieve the messages by making a GET request to the following URI:
 ````
 http://calendar-server.elasticbeanstalk.com/messages
 ````
 
-1. Create a input box where users can input a message
+1. Create a text input and submit button where users of your chatroom can enter and submit their messages.
 
-
-1. Post messages to the server by making a POST request to the same URI with the following properties ```created_by``` and ```message```. Below is a sample message:
+1. Post messages to the server by making a POST request to the same URI as above. Include a body with your AJAX request that includes information about your message. The body should contain the properties ```created_by``` and ```message```. Below is a sample message:
 ````
 {
   created_by: "Alex Zai",
