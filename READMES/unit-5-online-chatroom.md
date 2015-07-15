@@ -1,48 +1,86 @@
-#Online-Chatroom
+#Online-Slack
 
-##Goal
-[AJAX](https://en.wikipedia.org/wiki/Ajax_(programming) (asynchronous Javascript and XML) allows the browser to communicate with an external server without reloading the page. Prior to AJAX the browser would need to refresh the page in order to change. Imagine your entire web page refreshing whenever a new Tweet was posted.
+##Summary
+[AJAX](https://en.wikipedia.org/wiki/Ajax_(programming) (asynchronous Javascript and XML) allows the browser to communicate with an foreign server without reloading the page. 
 
 ![inline](https://i-msdn.sec.s-msft.com/dynimg/IC690875.png)
 
-The browser sends a ```request``` object to the server with information regarding what the browers plans to the do with the server. A large part of the instruction is included in the [request headers](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)   
+Imagine your entire web page refreshing whenever a new Tweet was posted - that's crazy. Prior to AJAX the browser would need to refresh the page in order to change. With AJAX, we can send a request to the server and - when the server responds - we can modify the page dynamically with javascript.
 
-![inline](https://trafficserver.readthedocs.org/en/4.0.x/_images/http_headers.jpg)
+###Request
+The browser sends a ```request``` object to the server with information regarding what the brower's intention are with the server. There are major requests types (or methods) that provided valueable information about the browsers intention 
 
-## Types of Request
 - GET
 - POST
 - PUT
 - DELETE
 
-*GET* requests are primarily used for fetching data from a the server. For example, when you load faceboook, your browser is making a GET request for all of your friends' latest post to populate the news feed. *POST* requests are used to provide data to the server. Whenever you are using Facebook messengers, and you send a message - a POST request is being made by your browser to add your message the server. *PUT* requests are used to update data on the server. *DELETE* requests
-inform the server that some data needs to be deleted. 
+**GET** requests are primarily used for fetching data from a the server. For example, when you load Faceboook, your browser is making a GET request for all of your friends' latest post to populate the news feed. **POST** requests are used to provide data to the server. Whenever you are using Facebook messengers, and you send a message - a POST request is being made by your browser to add your message the server. *PUT* requests are used to update data on the server. *DELETE* requests inform the server that some data needs to be deleted. 
+
+###HTTP Headers
+![](https://trafficserver.readthedocs.org/en/4.0.x/_images/http_headers.jpg)
+
+In addition to the request methods, a large part of the instructions is included in the [request headers](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)   
+
+A few examples of what is provided in the HTTP headers:
+Accept: Informs the server what file types that browser expects from the server
+User-Agent: Information about the method at which the browser is communicating with the server
+
+##How do I get started
+
+1. There are two parts to this challenge:
+  -fetching extra calendar events from Google's server
+  -adding a chatroom feature to your calendar
+
+Both challenges require you to make an AJAX request - but to different servers. 
 
 There are many ways to make an AJAX requests to a server. It can be done with javascript without having to load any external files. External files - such as jQuery - make it easier to use AJAX requests.
 
 ![inline](http://www.devbattles.com/en/images/upload/1427973218.png)
 
-In this challenge, we will augmenting our calendar that we build in the previous Skills Builder(https://github.com/CodesmithLLC/unit-project-slack) by using data from an external server. We will then add a chatroom to our calendar.
+1. We will be working on this challenge on a separate branch
 
-##How do I get started
-1. There are two parts to this challenge:
-  -fetching extra calendar events from Google's server
-  -adding a chatroom feature to your calendar
+1. Add the Codesmith Github Organization as a remote to your local repository with the follwoing command: 
+````
+git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
+````
+1. Create a new branch with the following line:
+````
+git checkout -b unit-5-online-slack 
+````
+
+1. Update the branch with the new requirements with the following line:
+````
+git pull upstream unit-5-online-slack
+````
 
 ###Online-Calendar
-1.
+1. In the previous Skills Builder (4SB), we used data that was present in our folder (also known as 'local') to create our calendar. We will be connecting to Google's server to get data from the Google Calendar we have all been using. To connect to a remote server, we will be making an AJAX GET request to the following location (also know as a uniform resource identifier).
 ````
 https://www.googleapis.com/calendar/v3/calendars/pe13s26rvf4fud47l08ti750i0@group.calendar.google.com/events?key=AIzaSyAyucc-d1nuZQnRsbMeZ1RtP04ZIdKr0qU
 ````
+
+1. Update your calendar to handle the additional data.  
 
 ###Online-Chatroom
 1. Create a chatroom element using html and javascript (feel free to use jQuery).
   - Create an area where incoming messages are displayed
   - Create an input and button where your messages can be sent
 
-1. To retrieve and input messages from the server, make GET and POST requests to the following endpoint:
+1. Retrieve the messages by making a GET request to the following URI:
 ````
 http://calendar-server.elasticbeanstalk.com/messages
+````
+
+1. Create a input box where users can input a message
+
+
+1. Post messages to the server by making a POST request to the same URI with the following properties ```created_by``` and ```message```. Below is a sample message:
+````
+{
+  created_by: "Alex Zai",
+  message: "Sample message"
+}
 ````
 
 ###How do I test if my answer is correct?
@@ -50,6 +88,4 @@ Run the following the command in the terminal:
 ````
 npm test
 ````
-
-
 
