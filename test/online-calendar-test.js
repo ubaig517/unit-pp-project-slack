@@ -1,9 +1,6 @@
 describe('Online-Calendar', function() {
-  var data = [];
-  var events = [];
-  var days = {};
   before(function(done) {
- doStuff(done, data, events, days);
+    done();
   });
 
   it('should have right amount of .event elements', function() {
