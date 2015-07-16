@@ -84,4 +84,3 @@ Run the following the command in the terminal:
 ````
 npm test
 ````
-
