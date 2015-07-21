@@ -10,7 +10,11 @@ In the previous challenge, you built a calendar web application with javascript,
 ````
 https://www.googleapis.com/calendar/v3/calendars/pe13s26rvf4fud47l08ti750i0@group.calendar.google.com/events?key=AIzaSyAyucc-d1nuZQnRsbMeZ1RtP04ZIdKr0qU
 ````
-3. Populate your schedule with the data received from the remote server
+***Warning: The format of the data received from the URL could be different from the schedule object given in the previous challenge*** 
+
+3. Populate your schedule with the new data received from the remote server
+
+4. To view your calendar, open index.html in your browser
 
 ##How do I test if my answer is correct?
 Run the following code in your terminal to test your code:
