@@ -7,4 +7,3 @@ document.body.appendChild(title);
 
 // Your schedule can be accessed through the global object "schedule"
 console.log(schedule);
-

@@ -6,17 +6,15 @@ In the previous challenge, you built a calendar web application with javascript,
 ##How do I get started
 1. Copy your code from the w1-s1-calendar challenge into the main.js and index.html found in the client directory.
 
-2. To serve your page, run the following command in your terminal:
-````
-npm start
-````
-Open your page by visiting "http://localhost:3000/"
-
-3. Modify your main.js code to perform a GET request to the following URL:
+2. Modify your main.js code to perform a GET request to the following URL:
 ````
 https://www.googleapis.com/calendar/v3/calendars/pe13s26rvf4fud47l08ti750i0@group.calendar.google.com/events?key=AIzaSyAyucc-d1nuZQnRsbMeZ1RtP04ZIdKr0qU
 ````
-4. Populate your schedule with the data received from the remote server
+***Warning: The format of the data received from the URL could be different from the schedule object given in the previous challenge*** 
+
+3. Populate your schedule with the new data received from the remote server
+
+4. To view your calendar, open index.html in your browser
 
 ##How do I test if my answer is correct?
 Run the following code in your terminal to test your code:
