@@ -8,7 +8,7 @@
 Imagine your entire web page refreshing whenever a new Tweet was posted - that's crazy. Prior to AJAX the browser would need to refresh the page in order to change. With AJAX, we can send a request to the server and - when the server responds - we can modify the page dynamically with javascript.
 
 ###Request
-The browser sends a ```request``` object to the server with information regarding what the brower's intention are with the server. There are major requests types (or methods) that provided valueable information about the browsers intention 
+The browser sends a `request` object to the server with information regarding what the brower's intention are with the server. There are major requests types (or methods) that provided valueable information about the browsers intention 
 
 - GET
 - POST
@@ -56,7 +56,7 @@ git pull upstream unit-5-online-slack
 ###Online-Calendar
 1. To connect to a remote server, make an AJAX GET request to the following location:
 ````
-https://www.googleapis.com/calendar/v3/calendars/pe13s26rvf4fud47l08ti750i0@group.calendar.google.com/events?key=AIzaSyAyucc-d1nuZQnRsbMeZ1RtP04ZIdKr0qU
+http://slack-server.elasticbeanstalk.com/calendar/1
 ````
 
 1. Update your calendar from the previous challenge to include data from the AJAX request.  
