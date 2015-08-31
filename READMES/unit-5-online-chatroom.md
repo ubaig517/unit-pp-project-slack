@@ -61,6 +61,8 @@ http://slack-server.elasticbeanstalk.com/calendar/1
 
 1. Update your calendar from the previous challenge to include data from the AJAX request.  
 
+1. Some boilerplate code is in there to get you started/ refactor your old solution into a more object Oriented Approach
+
 ###Online-Chatroom
 1. Create an area where chat messages can be displayed. 
 
