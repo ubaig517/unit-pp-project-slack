@@ -1,5 +1,8 @@
 // jquery is available in this file if you bower installed properly
 
+function Calendar(schedule) {
+  // do something with the data here;
+}
 function Event(data) {
   this.startTime = data.startTime;
   this.endTime = data.endTime;
@@ -23,6 +26,7 @@ function Week(number) {
     this.days.push(day);
   };
 }
+
 
 $(document).on('ready', function() {
   var title = $('<h1>').text('Social Calendar');
