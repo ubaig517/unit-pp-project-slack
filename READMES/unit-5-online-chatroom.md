@@ -36,19 +36,22 @@ User-Agent: Information about the method at which the browser is communicating w
 
  - There are many ways to make an AJAX requests to a server. It can be done with javascript without having to load any external files. External files - such as jQuery - make it easier to make AJAX requests.
 
-1. We will be working on this challenge on a separate branch from the ```master``` branch
+1. We will be working on this challenge on a separate branch from the `master` branch
 
 1. To create a new branch, type the following command in the command line:
+
 ````
 git checkout -b unit-5-online-chatroom 
 ````
 
-1. To update our new branch with files from the Codesmith Github Organization, we first need to link our local repository to the Codesmith Github Organization. To add a remote - which we will name ```upstream``` - to our local repository, runing the following command in your terminal.
+1. To update our new branch with files from the Codesmith Github Organization, we first need to link our local repository to the Codesmith Github Organization. To add a remote - which we will name `upstream` - to our local repository, runing the following command in your terminal.
+
 ````
 git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
 ````
 
 1. To update the branch with our new files, run the following line in terminal:
+
 ````
 git pull upstream unit-5-online-slack
 ````
@@ -73,16 +76,18 @@ http://calendar-server.elasticbeanstalk.com/messages
 
 1. Create a text input and submit button where users of your chatroom can enter and submit their messages.
 
-1. Post messages to the server by making a POST request to the same URI as above. Include a body with your AJAX request that includes information about your message. The body should contain the properties ```created_by``` and ```message```. Below is a sample message:
-````
+1. Post messages to the server by making a POST request to the same URI as above. Include a body with your AJAX request that includes information about your message. The body should contain the properties `created_by` and `message`. Below is a sample message:
+
+```
 {
   created_by: "Alex Zai",
   message: "Sample message"
 }
-````
+```
 
 ###How do I test if my answer is correct?
 Run the following the command in the terminal:
+
 ````
 npm test
 ````
