@@ -59,7 +59,7 @@ git pull upstream unit-5-online-slack
 ###Online-Calendar
 1. To connect to a remote server, make an AJAX GET request to the following location:
 ````
-http://slack-server.elasticbeanstalk.com/calendar/1
+http://slack-server.elasticbeanstalk.com/calendar/3
 ````
 
 1. Update your calendar from the previous challenge to include data from the AJAX request.  
@@ -71,7 +71,7 @@ http://slack-server.elasticbeanstalk.com/calendar/1
 
 1. Retrieve the messages by making a GET request to the following URI:
 ````
-http://calendar-server.elasticbeanstalk.com/messages
+http://slack-server.elasticbeanstalk.com/messages
 ````
 
 1. Create a text input and submit button where users of your chatroom can enter and submit their messages.
