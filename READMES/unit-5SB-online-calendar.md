@@ -16,7 +16,7 @@ In this challenge you have 3 main tasks,
 
 2. Modify your main.js code to perform a GET request to the following URL:
 ````
-http://slack-server.elasticbeanstalk.com/calendar/2
+http://slack-server.elasticbeanstalk.com/calendar/3
 ````
 ***Warning: The format of the data received from the URL will be different from the schedule object given in the previous challenge*** 
 
