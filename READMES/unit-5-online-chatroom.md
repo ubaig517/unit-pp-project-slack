@@ -1,7 +1,7 @@
 #Online-Slack
 
 ##Summary
-[AJAX](https://en.wikipedia.org/wiki/Ajax_(programming) (asynchronous Javascript and XML) allows the browser to communicate with an foreign server without reloading the page. 
+[AJAX](https://en.wikipedia.org/wiki/Ajax_(programming) (asynchronous Javascript and XML) allows the browser to communicate with a foreign server without reloading the page. 
 
 ![inline](https://i-msdn.sec.s-msft.com/dynimg/IC690875.png)
 
@@ -53,7 +53,7 @@ git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
 1. To update the branch with our new files, run the following line in terminal:
 
 ````
-git pull upstream unit-5-online-slack
+git pull upstream unit-5-online-calendar
 ````
 
 ###Online-Calendar
@@ -76,7 +76,7 @@ http://slack-server.elasticbeanstalk.com/messages
 
 1. Create a text input and submit button where users of your chatroom can enter and submit their messages.
 
-1. Post messages to the server by making a POST request to the same URI as above. Include a body with your AJAX request that includes information about your message. The body should contain the properties `created_by` and `message`. Below is a sample message:
+1. Post messages to the server by making a POST request to the same URI as above. Include a body with your AJAX request that includes information about your message. The body should contain the properties `created_by` and `message`. The server is expecting the body of the POST request to be encoded as application/json.  Below is a sample message:
 
 ```
 {
