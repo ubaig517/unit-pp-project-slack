@@ -11,10 +11,12 @@ In this challenge you have 3 main tasks,
 ##How do I get started
 1. Run your `bower install`, and `npm install`.
 1. Switch back to your master branch and copy your code from the index.html and the main.js
+1. Switch back to the unit-5SB-online-calendar branch
+1. Paste your previous code back into index.html and main.js
 
 2. Modify your main.js code to perform a GET request to the following URL:
 ````
-http://slack-server.elasticbeanstalk.com/calendar/1
+http://slack-server.elasticbeanstalk.com/calendar/2
 ````
 ***Warning: The format of the data received from the URL will be different from the schedule object given in the previous challenge*** 
 
