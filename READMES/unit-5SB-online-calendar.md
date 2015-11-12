@@ -24,6 +24,8 @@ http://slack-server.elasticbeanstalk.com/calendar/3
 
 4. To view your calendar, open index.html in your browser
 
+5. BONUS: Use jquery's promise feature
+
 ##How do I test if my answer is correct?
 Run the following code in your terminal to test your code:
 ````
