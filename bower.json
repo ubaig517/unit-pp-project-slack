@@ -17,6 +17,6 @@
   "dependencies": {
     "expect": "~0.3.1",
     "jquery": "~2.1.4",
-    "mocha": "~2.2.5"
+    "mocha": "~2.3.3"
   }
 }

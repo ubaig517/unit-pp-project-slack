@@ -17,6 +17,3 @@ describe('Online-Calendar', function() {
   });
 
  });
-mocha.globals();
-mochaPhantomJS.run();
-

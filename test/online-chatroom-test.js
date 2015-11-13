@@ -2,7 +2,7 @@ describe('Online-Chatroom', function() {
   var data;
   var numMessages;
   before(function(done) {
-    $.getJSON("http://calendar-server.elasticbeanstalk.com/messages").done(function(stuff){
+    $.getJSON("http://slack-server.elasticbeanstalk.com/messages").done(function(stuff){
         data = stuff;
         numMessages = data.length;
         done();
@@ -32,6 +32,3 @@ describe('Online-Chatroom', function() {
   });
 
 });
-mocha.globals();
-mochaPhantomJS.run();
-
