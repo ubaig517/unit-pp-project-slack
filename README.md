@@ -50,7 +50,7 @@ Treat the tests for this unit as a guideline and not as an absolute. You may cho
 #Part 2: Online-Chatroom
 
 ##Summary
-In part 1, we used an asynchronous request to retrieve calendar data and then used that data to populate the DOM so that the user could view their calendar entries. In part 2 we're going to use even more asynchronous requests so that you can develop a deeper understanding and familiarity with asynchronous code. If you remember one thing from this unit, remember that [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming) (asynchronous Javascript and XML) allows the browser to communicate with a foreign server without reloading the page. 
+In part 1, we used an asynchronous request to retrieve calendar data and then used that data to populate the DOM so that the user could view their calendar entries. In part 2 we're going to use even more asynchronous requests so that you can develop a deeper understanding and familiarity with asynchronous code. If you remember one thing from this unit, remember that [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) (asynchronous Javascript and XML) allows the browser to communicate with a foreign server without reloading the page. 
 
 ![inline](https://i-msdn.sec.s-msft.com/dynimg/IC690875.png)
 
@@ -100,6 +100,6 @@ Below is a sample message:
 }
 ```
 ###How do I test if my answer is correct?
-Run the following the command in the terminal:<br>```npm test```
+Run the following command in the terminal:<br>```npm test```
 
 Again: Treat the tests for this unit as a guideline and not as an absolute. You may choose to implement your chatroom in a slightly different way than the tests are expecting which could cause the tests to fail, and that's fine - as long as you can get your messages data into the DOM and POST messages to the server then you're on the right track.
