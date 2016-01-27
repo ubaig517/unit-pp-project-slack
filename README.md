@@ -22,7 +22,7 @@ git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
 - [ ] *important*: Git has now fetched the `unit-5` branch and named it `upstream/unit-5`. We need to copy this to a new branch before moving forward. Run `git checkout -b unit-5` to make the new branch and check it out in one step.
 - [ ] Enter the following command to install any new Bower dependencies: <br> ```bower install```
 - [ ] Next, use the following command to install any new npm dependencies: <br> ```npm install```
-- Some boilerplate code is in `client/main.js` to get you started and help your refactor your old solution into a more object Oriented Approach. If you'd rather continue working from where you left off on the last unit:
+- If you'd like to continue working from where you left off on the last unit:
 	- [ ] switch back to your previous branch (you remember the `git checkout` command, right?) and copy your code from the index.html and the main.js
 		- hint: to see a list of all branches (including your current branch), type `git branch`
 	- [ ] Switch back to the `unit-5` branch
