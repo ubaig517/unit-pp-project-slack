@@ -19,7 +19,7 @@ git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
 ```
 - [ ] Once your project directory is clean (i.e. everything is committed), use Git's [fetch](https://git-scm.com/docs/git-fetch) command to copy down the `unit-5` branch to your machine: <br>```git fetch upstream unit-5```
 	- *note: Git will name this branch* `upstream/unit-5`
-- [ ] Now that you have the `upstream/unit-5` branch downloaded, switch into that branch with the Git [checkout](https://git-scm.com/docs/git-checkout) command: <br> ```git checkout origin/unit-5```
+- [ ] *important*: Git has now fetched the `unit-5` branch and named it `upstream/unit-5`. We need to copy this to a new branch before moving forward. Run `git checkout -b unit-5` to make the new branch and check it out in one step.
 - [ ] Enter the following command to install any new Bower dependencies: <br> ```bower install```
 - [ ] Next, use the following command to install any new npm dependencies: <br> ```npm install```
 - Some boilerplate code is in `client/main.js` to get you started and help your refactor your old solution into a more object Oriented Approach. If you'd rather continue working from where you left off on the last unit:
@@ -35,7 +35,7 @@ git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
 
 You may use vanilla JavaScript or JQuery to complete these challenges. Try to implement each step both ways and see which one you like better. [Here](http://youmightnotneedjquery.com) for some tips on how to perform common tasks each way.
 
-- [ ] Modify your main.js code to perform an asynchronous HTTP GET request to the following URL: <br> ```http://slack-server.elasticbeanstalk.com/calendar/4```
+- [ ] Modify your main.js code to perform an asynchronous HTTP GET request to the following URL: <br> ```http://slack-server.elasticbeanstalk.com/calendar/5```
 	- ***The format of the data received from the URL will be different from the schedule object given in the previous challenge, so don't expect your old code to work without modification***
 - [ ] Once you've retrieved the calendar data, populate the DOM with the data so that the user can see their calendar entries
 - [ ] **BONUS (Only attempt if you have extra time)**: Use JQuery's promise feature to control your asynchronous GET request
