@@ -5,7 +5,7 @@ In the previous challenge, you built a calendar web application with javascript,
 In this challenge you have 3 main tasks:
 
 - [ ] You will need to make an ajax request to a database on a remote url.
-- [ ] You will need to extract your current week's schedule from there. 
+- [ ] You will need to extract your current week's schedule from there.
 - [ ] You will need to display this data in your calendar application.
 
 ##How do I get started
@@ -17,17 +17,19 @@ As usual, there will be some setup involved before you can get started.
 ```
 git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
 ```
-- [ ] Once your project directory is clean (i.e. everything is committed), use Git's [fetch](https://git-scm.com/docs/git-fetch) command to copy down the `unit-5` branch to your machine: <br>```git fetch upstream unit-5```
+- [ ] Once your project directory is clean (i.e. everything is committed), use Git's [fetch](https://git-scm.com/docs/git-fetch) command to copy down the `unit-5` branch to your machine: `git fetch upstream unit-5`
 	- *note: Git will name this branch* `upstream/unit-5`
-- [ ] *important*: Git has now fetched the `unit-5` branch and named it `upstream/unit-5`. We need to copy this to a new branch before moving forward. Run `git checkout -b unit-5` to make the new branch and check it out in one step.
-- [ ] Enter the following command to install any new Bower dependencies: <br> ```bower install```
-- [ ] Next, use the following command to install any new npm dependencies: <br> ```npm install```
+- [ ] *important*: Git has now fetched the `unit-5` branch and named it `upstream/unit-5`. We need to copy this to a new branch before moving forward. Run `git checkout upstream/unit-5`.
+- [ ] The current branch is now `upstream/unit-5`, which is a *remote branch*. Since it is remote, it puts the HEAD in a *detached state*, i.e. you cannot make new commits. We need to copy this branch in order to start making commits to it. You can copy this branch to a new one by running `git checkout -b unit-5`.
+- [ ] You now have a branch called `unit-5`. Work from here.
+- [ ] Enter the following command to install any new Bower dependencies: <br> `bower install`
+- [ ] Next, use the following command to install any new npm dependencies: <br> `npm install`
 - If you'd like to continue working from where you left off on the last unit:
 	- [ ] switch back to your previous branch (you remember the `git checkout` command, right?) and copy your code from the index.html and the main.js
 		- hint: to see a list of all branches (including your current branch), type `git branch`
 	- [ ] Switch back to the `unit-5` branch
 	- [ ] Paste your previous code back into index.html and main.js
-- [ ] Start your server by running: <br> ```npm start```
+- [ ] Start your server by running: <br> `npm start`
 - [ ] Visit http://localhost:3000 to view your index.html page
 	- *Note: for this unit and all further units you should be using your Web server to view your site rather than loading index.html in your browser directly.*
 
@@ -50,7 +52,7 @@ Treat the tests for this unit as a guideline and not as an absolute. You may cho
 #Part 2: Online-Chatroom
 
 ##Summary
-In part 1, we used an asynchronous request to retrieve calendar data and then used that data to populate the DOM so that the user could view their calendar entries. In part 2 we're going to use even more asynchronous requests so that you can develop a deeper understanding and familiarity with asynchronous code. If you remember one thing from this unit, remember that [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) (asynchronous Javascript and XML) allows the browser to communicate with a foreign server without reloading the page. 
+In part 1, we used an asynchronous request to retrieve calendar data and then used that data to populate the DOM so that the user could view their calendar entries. In part 2 we're going to use even more asynchronous requests so that you can develop a deeper understanding and familiarity with asynchronous code. If you remember one thing from this unit, remember that [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) (asynchronous Javascript and XML) allows the browser to communicate with a foreign server without reloading the page.
 
 ![inline](https://i-msdn.sec.s-msft.com/dynimg/IC690875.png)
 
@@ -90,7 +92,7 @@ A few examples of what is provided in the HTTP headers:
 
 - [ ] Post messages to the server by making a **POST** request to the same URI as above. Include a **body** with your AJAX request that includes information about your message. The body should contain the properties `created_by` and `message`. The server is expecting the body of the POST request to be encoded as **JSON**.  
 	- *Hint: you may need to tell the server what type of data you're sending over*
-	
+
 Below is a sample message:
 
 ```
