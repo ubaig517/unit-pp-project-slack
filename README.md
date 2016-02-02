@@ -37,7 +37,7 @@ git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
 
 You may use vanilla JavaScript or JQuery to complete these challenges. Try to implement each step both ways and see which one you like better. [Here](http://youmightnotneedjquery.com) for some tips on how to perform common tasks each way.
 
-- [ ] Modify your main.js code to perform an asynchronous HTTP GET request to the following URL: <br> ```http://slack-server.elasticbeanstalk.com/calendar/5```
+- [ ] Modify your main.js code to perform an asynchronous HTTP GET request to the following URL: <br> ```http://slack-server.elasticbeanstalk.com/calendar/{COHORT_NUMBER}```
 	- ***The format of the data received from the URL will be different from the schedule object given in the previous challenge, so don't expect your old code to work without modification***
 - [ ] Once you've retrieved the calendar data, populate the DOM with the data so that the user can see their calendar entries
 - [ ] **BONUS (Only attempt if you have extra time)**: Use JQuery's promise feature to control your asynchronous GET request
