@@ -17,11 +17,12 @@ As usual, there will be some setup involved before you can get started.
 ```
 git remote add upstream https://github.com/CodesmithLLC/unit-project-slack.git
 ```
-- [ ] Once your project directory is clean (i.e. everything is committed), use Git's [fetch](https://git-scm.com/docs/git-fetch) command to copy down the `unit-5` branch to your machine: `git fetch upstream unit-5`
-	- *note: Git will name this branch* `upstream/unit-5`
-- [ ] *important*: Git has now fetched the `unit-5` branch and named it `upstream/unit-5`. We need to copy this to a new branch before moving forward. Run `git checkout upstream/unit-5`.
-- [ ] The current branch is now `upstream/unit-5`, which is a *remote branch*. Since it is remote, it puts the HEAD in a *detached state*, i.e. you cannot make new commits. We need to copy this branch in order to start making commits to it. You can copy this branch to a new one by running `git checkout -b unit-5`.
-- [ ] You now have a branch called `unit-5`. Work from here.
+- [ ] Once your project directory is clean (i.e. everything is committed), use Git's [fetch](https://git-scm.com/docs/git-fetch) command to copy down the `unit-5` branch to your machine: `git fetch <remote-name> <remote-branch-name>:<local-branch-name>`
+```
+git fetch upstream unit-5:unit-5
+```
+
+- [ ] You now have a branch called `unit-5`. Switch to it with `git checkout unit-5`. Work from here. If you ever lose track of which branch you are on, check using `git branch`. 
 - [ ] Enter the following command to install any new Bower dependencies: <br> `bower install`
 - [ ] Next, use the following command to install any new npm dependencies: <br> `npm install`
 - If you'd like to continue working from where you left off on the last unit:
