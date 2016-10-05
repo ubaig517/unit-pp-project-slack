@@ -9,7 +9,7 @@ class Event {
   constructor(data) {
     this.startTime = data.startTime;
     this.endTime = data.endTime;
-    this.description = data.description
+    this.description = data.description;
   }
 }
 
@@ -20,7 +20,7 @@ class Day {
     this.addEvent = (eventData) => {
       this.events.push(new Event(eventData));
     }
-    this.orderEvents = function() {
+    this.orderEvents = () => {
       //go through events and sort them by start and end time
     }
   }
