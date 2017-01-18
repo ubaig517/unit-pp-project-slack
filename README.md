@@ -23,10 +23,6 @@ git fetch upstream unit-5:unit-5
 ```
 
 - [ ] You now have a branch called `unit-5`. Switch to it with `git checkout unit-5`. Work from here. If you ever lose track of which branch you are on, check using `git branch`.
-- [ ] Enter the following command to install any new Bower dependencies:
-```
-bower install
-```
 
 - [ ] Next, use the following command to install any new npm dependencies:
 ```
