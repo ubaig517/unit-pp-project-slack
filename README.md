@@ -66,7 +66,7 @@ Treat the tests for this unit as a guideline and not as an absolute. You may cho
 ## Summary
 In part 1, we used an asynchronous request to retrieve calendar data and then used that data to populate the DOM so that the user could view their calendar entries. In part 2 we're going to use even more asynchronous requests so that you can develop a deeper understanding and familiarity with asynchronous code. If you remember one thing from this unit, remember that [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) (asynchronous JavaScript and XML) allows the browser to communicate with a foreign server without reloading the page.
 
-![inline](https://i-msdn.sec.s-msft.com/dynimg/IC690875.png)
+![inline](./docs/assets/images/page_lifecycles.png)
 
 Imagine if on Slack the entire page had to refresh every time a new message was posted - that's crazy. Prior to AJAX the browser would need to refresh the page in order to change. With AJAX, we can send a request to the server and - when the server responds - we can modify the page dynamically with JavaScript.
 
@@ -81,7 +81,7 @@ Every asynchronous request is at its core an HTTP request. The browser sends a `
 **GET** requests are primarily used for fetching data from a the server. For example, when you load Faceboook, your browser is making a GET request for all of your friends' latest post to populate the news feed. **POST** requests are used to provide data to the server. Whenever you are using Facebook messengers, and you send a message - a POST request is being made by your browser to add your message the server. **PUT** requests are used to update data on the server. **DELETE** requests inform the server that some data needs to be deleted.
 
 ### HTTP Headers
-![](https://trafficserver.readthedocs.org/en/4.0.x/_images/http_headers.jpg)
+![](./docs/assets/images/http_headers.png)
 
 In addition to the request **method**, the browser may provide additional information and instructions about its request in the form of **[request headers](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)**.
 
