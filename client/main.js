@@ -36,10 +36,10 @@ class Week {
   }
 }
 
-$(document).on('ready', () => {
-  const title = $('<h1>').text('Social Calendar');
-  $('body').append(title);
-  console.log(title);
-  
-  // Make an AJAX request to the server, then do something with the result!
+
+document.addEventListener('DOMContentLoaded', () => {
+  const title = document.createElement('h1');
+  title.innerText = 'Social Calendar';
+  document.querySelector('body').appendChild(title);
+  // make AJAX call here....
 });
