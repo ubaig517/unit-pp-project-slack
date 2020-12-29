@@ -27,7 +27,7 @@ There are no tests for this exercise. Visually inspect your ```index.html``` in 
   ````
   Take a look at what appears in your console; it might be helpful to write out how this data is structured and do a little whiteboarding on how you can convert this data model into something that users can see and interact with. Will you structure this using a table? A bunch of divs? An unordered list? 
 
-2. No matter what you decide to use you will have to create HTML elements to hold your data from the `schedule` variable, check out [MDN's documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) to find a method we can use to create different DOMNodes.
+2. No matter what you decide to use you will have to create HTML elements to hold your data from the `schedule` variable, check out [MDN's documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) to find a method we can use to create different DOM Nodes.
 
 3. Once these DOM nodes are created, we need to attach them to the page (so they actually appear!) There are a bunch of cool methods we can use:
 
