@@ -1,4 +1,4 @@
-var schedule =
+const schedule =
 [
 {
   week: 1,
@@ -15,7 +15,7 @@ var schedule =
   unit: 2,
   challenge: "Data Structures",
   goals: [
-    'Reimplment the following data structures: linked list, stack, queue, set, graph, hash table, tree, binary search tree',
+    'Re-implement the following data structures: linked list, stack, queue, set, graph, hash table, tree, binary search tree',
   ]
 },
 {
