@@ -1,11 +1,35 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Calendar</title>
+  <title>Chat App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+    #form { background: rgba(78,209,178); margin-bottom: 0; padding: .5rem 1rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 4.5rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+
+    #input { border: none; padding:1rem; flex-grow: 1; border-radius: 2rem; margin:0.5rem 0.25rem; }
+
+    #input:focus { outline: none; }
+
+    #form > button { background: #333; border: none; padding: 1rem 2rem; margin: 0.25rem .5rem; border-radius: 3px; outline: none; color: #fff; text-align: center;}
+
+    #messages { list-style-type: none; margin: 0; padding: 0; }
+    #messages > li { padding: 0.5rem 1rem; }
+    #messages > li:nth-child(odd) { background: #efefef; }
+  </style>
 </head>
 <body>
-
-
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand title p-4 has-text-white">
+      Chatroom
+    </div>
+  </nav>
+  <ul id="messages"></ul>
+  <form class="is-primary" id="form" action="">
+    <input id="input" type="text" autocomplete="off">
+    <button id="btn">Send</button>
+  </form>
 </body>
 <script src="./node_modules/expect/umd/expect.min.js"></script>
 <script src="./node_modules/mocha/mocha.js"></script>
