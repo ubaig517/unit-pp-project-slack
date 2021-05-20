@@ -5,7 +5,8 @@
 
 // const form = document.querySelector('#form');
 const button = document.querySelector('#btn');
-
+// create a const to reference messages UL
+const unorderedList = document.querySelector('ul');
 
 document.addEventListener('DOMContentLoaded', () => {
   // const title = document.createElement('h1');
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // document.querySelector('body').appendChild(title);
   // create a const to reference messages UL
   const unorderedList = document.querySelector('ul');
-  const body = document.querySelector("body");
+  const body = document.querySelector('body');
   body.scrollTop = body.scrollHeight;
   // make AJAX call here....
 
@@ -26,12 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // console.log(data)
       // iterate over data in reverse
       // for each item in data
-      for (let i = 10; i >= 0; i--) {
+      for (let i = 20; i >= 0; i--) {
         // create a new li each iteration of the loop
         const listItem = document.createElement('li');
         const userName = document.createElement('h5');
         const message = document.createElement('p');
-        userName.classList.add('subtitle');
+        userName.classList.add('has-text-weight-semibold');
         userName.innerText = data[i].created_by;
         message.innerText = data[i].message;
         
@@ -57,20 +58,45 @@ button.addEventListener('click', (e) => {
   const data = {
     message: values,
     created_at: newDate,
-    created_by: 'follow me @rauburnin'
+    created_by: 'OO-mar'
   }
   // clear text field
+  input.value = '';
 
   fetch('https://curriculum-api.codesmith.io/messages', {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
-      'Content-Type': 'application/json',
-      // 'Access-Control-Allow-Origin': 'https://curriculum-api.codesmith.io/messages'
+      'Content-Type': 'application/json'
     }
   })
     .then(data => data.json())
     .then(data => {
       console.log(data)
     });
+
+  // When message is sent, make fetch request as well
+  setTimeout(()=>{
+    fetch('https://curriculum-api.codesmith.io/messages')
+      .then(data => data.json())
+      .then(data => {
+      // console.log(data)
+      // iterate over data in reverse
+      // for each item in data
+        for (let i = 20; i >= 0; i--) {
+        // create a new li each iteration of the loop
+          const listItem = document.createElement('li');
+          const userName = document.createElement('h5');
+          const message = document.createElement('p');
+          userName.classList.add('has-text-weight-semibold');
+          userName.innerText = data[i].created_by;
+          message.innerText = data[i].message;
+        
+          listItem.appendChild(userName);
+          listItem.appendChild(message);
+          // console.log(userName, message);
+          unorderedList.appendChild(listItem);
+        }
+      });
+  }, 1000)
 })
